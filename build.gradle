@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+group = 'cs455'
+version = '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    // Spark
+    implementation 'org.apache.spark:spark-core_2.12:3.3.2'
+    implementation 'org.apache.spark:spark-sql_2.12:3.3.2'
+    implementation 'org.apache.spark:spark-mllib_2.12:3.3.2'
+    // Sedona
+    implementation 'org.apache.sedona:sedona-core-3.0_2.12:1.4.1'
+    implementation 'org.apache.sedona:sedona-sql-3.0_2.12:1.4.1'
+    implementation "org.datasyslab:geotools-wrapper:1.5.0-28.2"
+    
+    testImplementation 'junit:junit:4.13.2'
+}
+jar {
+    manifest {
+        attributes(
+        'Main-Class': 'cs455.rsm.Main'
+        )
+    }
+}
