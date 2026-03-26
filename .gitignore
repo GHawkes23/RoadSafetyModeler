@@ -2,3 +2,4 @@
 output/
 *.zip
 build
+data/

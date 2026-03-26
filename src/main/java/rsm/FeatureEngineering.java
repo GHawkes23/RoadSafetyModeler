@@ -1,4 +1,4 @@
-package cs455.rsm;
+package rsm;
 
 import org.apache.spark.sql.Column;
 import org.apache.spark.sql.Dataset;

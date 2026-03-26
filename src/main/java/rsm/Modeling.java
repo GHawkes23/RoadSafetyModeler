@@ -1,4 +1,4 @@
-package cs455.rsm;
+package rsm;
 
 import java.util.Arrays;
 import java.util.List;
